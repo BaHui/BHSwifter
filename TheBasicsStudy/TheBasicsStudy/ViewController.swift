@@ -8,6 +8,8 @@
 
 import UIKit
 
+// ########################### 1、基础部分 #########################################
+
 class ViewController: UIViewController {
 
 	// MARK: - ViewController Life Cycle
@@ -15,7 +17,6 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 
 		// ******************* 定义变量和常量 ****************************
-
 		// 声明一个常量: 使用let修饰, 不可以被改变
 		let 常量A = "QiaoBaHui"
 		print(常量A) // 输出: QiaoBaHui
@@ -109,9 +110,8 @@ class ViewController: UIViewController {
 		// 输出: 4 < 42 < 100
 
 		//************************** 使用断言进行调试 **************************
-		let assertTest = -3
-		assert(assertTest >= 0, "A person's age cannot be less than zero") 	// 因为 age < 0，所以断言会触发
-
+		//let assertTest = -3
+		//assert(assertTest >= 0, "A person's age cannot be less than zero") 	// 因为 age < 0，所以断言会触发
 	}
 
 }
