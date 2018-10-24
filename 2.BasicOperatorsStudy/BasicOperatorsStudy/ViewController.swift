@@ -38,6 +38,17 @@ class ViewController: UIViewController {
 
 		let colorNameToUse = userDefinedColorName ?? defaultColorName
 		print(colorNameToUse) // 输出:Blue
+
+		// ****************** 区间 ******************
+		let names = ["name1", "name2", "name3"]
+		for name in names[..<2] {
+			print(name) //输出: name1    name2
+		}
+
+		for name in names[2...] {
+			print(name) //输出: name3
+		}
+
 	}
 
 }
