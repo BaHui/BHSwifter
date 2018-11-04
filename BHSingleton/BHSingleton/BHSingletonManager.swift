@@ -9,5 +9,13 @@
 import UIKit
 
 class BHSingletonManager: NSObject {
-
+  var name: String?
+  
+  static let singletoManager = BHSingletonManager()
+ 
+  // MARK: - Shared Instance BHSingletonManager
+  static func sharedInstance() -> BHSingletonManager {
+    return singletoManager
+  }
+ 
 }

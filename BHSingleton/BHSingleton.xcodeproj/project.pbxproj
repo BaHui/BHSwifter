@@ -12,6 +12,7 @@
 		24573188218DFAD300454D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24573186218DFAD300454D97 /* Main.storyboard */; };
 		2457318A218DFAD600454D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24573189218DFAD600454D97 /* Assets.xcassets */; };
 		2457318D218DFAD600454D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2457318B218DFAD600454D97 /* LaunchScreen.storyboard */; };
+		24573196218DFB1A00454D97 /* BHSingletonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24573195218DFB1A00454D97 /* BHSingletonManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		24573189218DFAD600454D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2457318C218DFAD600454D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2457318E218DFAD600454D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24573195218DFB1A00454D97 /* BHSingletonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSingletonManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,21 @@
 			children = (
 				24573182218DFAD300454D97 /* AppDelegate.swift */,
 				24573184218DFAD300454D97 /* ViewController.swift */,
+				24573195218DFB1A00454D97 /* BHSingletonManager.swift */,
+				24573194218DFADE00454D97 /* Supporting Files */,
+			);
+			path = BHSingleton;
+			sourceTree = "<group>";
+		};
+		24573194218DFADE00454D97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				24573186218DFAD300454D97 /* Main.storyboard */,
 				24573189218DFAD600454D97 /* Assets.xcassets */,
 				2457318B218DFAD600454D97 /* LaunchScreen.storyboard */,
 				2457318E218DFAD600454D97 /* Info.plist */,
 			);
-			path = BHSingleton;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24573185218DFAD300454D97 /* ViewController.swift in Sources */,
+				24573196218DFB1A00454D97 /* BHSingletonManager.swift in Sources */,
 				24573183218DFAD300454D97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,14 +294,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BHSingleton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qiaobahui.-BHSingleton.BHSingleton";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiaobahui.singleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,14 +313,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BHSingleton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qiaobahui.-BHSingleton.BHSingleton";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiaobahui.singleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
